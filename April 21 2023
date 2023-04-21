@@ -1,0 +1,44 @@
+*Bridge crossing problem
+{
+4 animals are trying to cross a bridge with a lamp that last for 17 minutes
+2 animals can cross at the same time but will go at the pace of the slowest animal
+Then one animal would have to bring the lamp back for the other animals.
+Since the animals can't cross without the lamp
+Animal D: 10 minutes, C: 5 minutes, B: 2 minutes, A: 1 minute
+How can we get the animals to cross within 17 minutes
+Original answer that I came up with:
+Couldn't get it to 17 minutes, best I could get was 19 minutes.
+Send A+D, then A+C, then A+B. This would equal to 19 minutes
+Actual Answer: Send A+B, then C+D, then B would go back for A. This equals to 17 minutes.
+The key is to have one of the fastest go first and stay at the end. 
+Then the two slowest would have to go together since it only accounts for the slowest animals pace.
+}
+*binary search is faster than linear search as it splits off half of the search each time it runs
+{
+For example, if you're trying to guess a number between 0-100
+it'll take a maximum of 101 attempts to guarantee a correct guess
+with binary search, you start at the middle (50)
+If the number is less than you go to 25 and if its more than you go to 75.
+Assuming it's less, you guess 25 and if the number is less again, you go to 12
+Eventually you keep repeating this process and you'll guess the right number
+This process speed is more noticable when you get to values with 1000 or more elements
+}
+*practice makes perfect
+{
+-Read book chapters
+-Code
+  Write it yourself
+  Discuss with a group
+  Read others' code
+  Write it yourself again
+  Teach it to others, especially non-coder (the Feyman technique)
+-The Feyman technique
+  Choose a concept to learn
+  Teach it to yourself or someone else
+  Return to the source material if you get stuck
+  Simplify your explanations and create analogies
+}
+*Polymorphism("many forms")
+  Polymorphism: the ability of a class to provide different implementations of a method
+  depending on the type of object that is passed to the method
+
